@@ -1,0 +1,113 @@
+AI Recruitment Process System
+🔍 Overview
+The AI Recruitment Process System automates and enhances the hiring lifecycle using machine learning, NLP, and intelligent automation. It screens resumes, ranks candidates, schedules interviews, and provides analytics to assist HR teams in making data-driven hiring decisions.
+
+📁 Features
+✅ Resume Parsing & Screening
+Extracts key candidate information using NLP and ranks applicants based on job description match.
+
+🧠 AI-Based Candidate Scoring
+Uses ML models to score candidates based on skill alignment, experience, and job-fit probability.
+
+🗓️ Automated Interview Scheduling
+Integrates with calendars (Google/Outlook) to schedule interviews with minimal manual effort.
+
+📊 Analytics Dashboard
+Real-time hiring metrics, diversity reports, and pipeline analysis.
+
+🔄 CRM & ATS Integration
+Seamless integration with existing Applicant Tracking Systems (ATS) and HR CRMs.
+
+⚙️ Tech Stack
+Layer	Tools / Technologies
+Backend	Python, Flask / FastAPI
+Frontend	React.js / Next.js
+Database	PostgreSQL / MongoDB
+ML/NLP	spaCy, Scikit-learn, OpenAI API, HuggingFace
+Deployment	Docker, AWS EC2 / Lambda, GitHub Actions
+
+🛠️ Installation
+bash
+Copy
+Edit
+git clone https://github.com/your-org/ai-recruitment-system.git
+cd ai-recruitment-system
+pip install -r requirements.txt
+Set up .env file for environment variables:
+
+ini
+Copy
+Edit
+OPENAI_API_KEY=your_key
+DATABASE_URL=your_database_url
+Run development server:
+
+bash
+Copy
+Edit
+uvicorn main:app --reload
+Frontend:
+
+bash
+Copy
+Edit
+cd client
+npm install
+npm run dev
+🔍 Example Usage
+Upload a resume (PDF/DOCX)
+
+System parses and matches skills with the job post
+
+Displays ranking, summary, and decision suggestion
+
+Optionally, schedule interviews via calendar API
+
+🤖 AI/ML Modules
+Resume Matcher: TF-IDF / BERT-based similarity scoring
+
+Skill Extractor: Custom entity recognition using spaCy
+
+Bias Checker: Flagging potential gender/race-based bias in JD/candidate data
+
+Fit Predictor: ML classifier for hire/no-hire prediction
+
+📂 Project Structure
+css
+Copy
+Edit
+├── backend/
+│   ├── models/
+│   ├── services/
+│   ├── routers/
+│   └── main.py
+├── client/
+│   ├── pages/
+│   └── components/
+├── data/
+│   └── sample_resumes/
+├── README.md
+└── requirements.txt
+🚀 Deployment
+This project supports deployment via:
+
+Docker
+
+bash
+Copy
+Edit
+docker-compose up --build
+Cloud Platforms: AWS, Azure, Heroku (via GitHub CI/CD)
+
+📌 To-Do
+ Add support for LinkedIn profile scraping
+
+ Add multi-language parsing
+
+ Integrate with WhatsApp/Slack for candidate communication
+
+🤝 Contributing
+We welcome contributions! Please open issues or submit a pull request.
+
+📄 License
+MIT License © 2025 Anant
